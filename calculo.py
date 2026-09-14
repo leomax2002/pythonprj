@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+import sys
+
+sys.path.append("/home/admin/projetos/pythonprj")
+import servicos
+
 notas = []
 soma = 0
 
@@ -8,7 +13,7 @@ nota = 1
 while(True):
 	try:
 		nota2 = float(input("Digite a nota %d de 5: " %nota))
-		if nota2 <= 0 or nota2 >= 10:
+		if nota2 < 0 or nota2 > 10:
 			print("Por favor, digite uma nota entre 0 e 10")
 			break
 		nota+=1

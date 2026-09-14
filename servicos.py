@@ -4,7 +4,7 @@
 
 #Primeiro programa
 #Lista: é uma sequência ordenada de valores
-if __name__ == "__main__":
+def main():
 	autor = "Leonardo Maximo"
 	portas_alvo = [22,80,443,3306,8080,3000,5000,8000,137,138,139,445,"DNS"]
 	portas_alvo.append(21) #Adiciona a porta 21 na variável portas_alvo
@@ -33,3 +33,5 @@ if __name__ == "__main__":
 		nome = servicos.get(PORTA,'desconhecido')
 		print(f'Porta {PORTA}: rvico {nome}')
 
+if __name__ == "__main__":
+	main()
